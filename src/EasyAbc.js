@@ -42,7 +42,8 @@ class EasyAbc extends Component {
     }
   }
   repeatSound() {
-    let sound = (this.state.displayImage) ? document.getElementById('wordSound') : sound= document.getElementById('letterSound');
+    let sound;
+    sound = (this.state.displayImage) ? document.getElementById('wordSound') : sound= document.getElementById('letterSound');
     
     sound.pause();
     sound.currentTime = 0;
